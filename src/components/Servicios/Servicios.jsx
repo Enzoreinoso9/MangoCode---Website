@@ -18,10 +18,9 @@ const servicios = [
 
 const Servicios = () => {
   return (
-    <section id="servicios-section" className="relative bg-[#092e15]/80 py-16 px-4 overflow-hidden">
+    <section id="servicios-section" className="relative  py-16 px-4 overflow-hidden">
       {/* Difuminado sutil en bordes (fuera del área del título) */}
-      <div className="absolute -top-8 left-0 right-0 h-16 bg-gradient-to-b from-transparent to-black/5 pointer-events-none"></div>
-      <div className="absolute -bottom-8 left-0 right-0 h-16 bg-gradient-to-t from-transparent to-black/5 pointer-events-none"></div>
+     
       
       <div className="max-w-5xl mx-auto relative z-10">
         <div>

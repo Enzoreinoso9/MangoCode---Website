@@ -7,8 +7,6 @@ const Contacto = () => {
 
   return (
     <section id="contacto-section" className="py-20 px-4 relative overflow-hidden">
-      {/* Fondo con gradiente sutil */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#3a7d44]/20 to-[#1e3a24]/20"></div>
       
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-[#00C853]/10 rounded-full blur-3xl"></div>
