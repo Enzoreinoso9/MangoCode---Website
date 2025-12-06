@@ -15,14 +15,13 @@ const Hero = () => {
               Bienvenido a <span className="text-[#FFA726]">Mango</span><span className="text-[#00C853]">Code</span>
             </h1>
             <p className="text-xl lg:text-2xl text-white-600 leading-relaxed font-regular">
-                Donde tus ideas se transforman en soluciones digitales.
-                Creamos software que potencia tu visión y te acerca al éxito.
+                Software moderno, rápido y hecho para durar. Construimos como se debe.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="px-6 py-3 bg-[#FFA726] hover:bg-[#FFA726] text-white text-shadow font-semibold rounded-full shadow-md hover:shadow-lg transition-transform duration-200 hover:scale-105 animate-pulseScale">
+              <button className="px-6 py-3 bg-[#FFA726] hover:bg-[#FFB74D] text-white text-shadow font-semibold rounded-full shadow-md hover:shadow-lg transition-transform duration-200 hover:scale-105 animate-pulseScale">
                 Conoce Nuestros Servicios
               </button>
-              <button className="px-6 py-3 bg-[#FFA726] hover:bg-[#FFA726] text-white text-shadow font-semibold rounded-full shadow-md hover:shadow-lg transition-transform duration-200 hover:scale-105">
+              <button className="px-6 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#FFA726] font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105">
                 Ver Proyectos
               </button>
             </div>
