@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import PoliticaPrivacidad from './pages/PoliticaPrivacidad'
 
 const App = () => {
   return (
-    <Router>
+
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/politicayprivacidad" element={<PoliticaPrivacidad />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 
