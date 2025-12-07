@@ -5,5 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/MangoCode---Website/'
+  base: '/MangoCode---Website/',
+  build: {
+    outDir: 'docs'
+  }
 })
