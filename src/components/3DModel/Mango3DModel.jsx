@@ -4,8 +4,24 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 
 function MangoModel({ mousePosition }) {
-  // Usamos la base configurada en Vite para que funcione tanto en localhost como en GitHub Pages
-  const modelPath = `${import.meta.env.BASE_URL}./models/mango3D.glb`
+  // Construimos la ruta del modelo de manera dinámica para que funcione en cualquier entorno
+  // Detecta el base path desde la URL actual o usa el configurado en Vite
+  const getBasePath = () => {
+    // En producción, detectamos el base path desde window.location
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname
+      // Si estamos en GitHub Pages, el path incluirá /MangoCode---Website/
+      if (path.includes('/MangoCode---Website/')) {
+        return '/MangoCode---Website/'
+      }
+      // Si estamos en la raíz, usamos el BASE_URL de Vite
+      return import.meta.env.BASE_URL || '/'
+    }
+    return import.meta.env.BASE_URL || '/MangoCode---Website/'
+  }
+  
+  const basePath = getBasePath()
+  const modelPath = `${basePath}models/mango3D.glb`.replace(/\/+/g, '/')
   const gltf = useLoader(GLTFLoader, modelPath)
   const meshRef = useRef()
   
