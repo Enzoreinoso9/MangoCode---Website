@@ -10,7 +10,7 @@ import { SiReact,
   SiFirebase,
   SiMongodb,
 } from "react-icons/si";
-import sinImagen from '../../assets/sinImagen.png'
+import sinImagen from '../../assets/sinImagen2.png'
 
 const CATEGORIES = [
   { id: 'financiera', label: 'Financiera' },

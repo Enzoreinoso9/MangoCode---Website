@@ -4,7 +4,9 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 
 function MangoModel({ mousePosition }) {
-  const gltf = useLoader(GLTFLoader, '/models/mango3D.glb')
+  // Usamos la base configurada en Vite para que funcione tanto en localhost como en GitHub Pages
+  const modelPath = `${import.meta.env.BASE_URL}models/mango3D.glb`
+  const gltf = useLoader(GLTFLoader, modelPath)
   const meshRef = useRef()
   
   // Preservar los colores originales del modelo GLB
