@@ -5,7 +5,7 @@ import * as THREE from 'three'
 
 function MangoModel({ mousePosition }) {
   // Usamos la base configurada en Vite para que funcione tanto en localhost como en GitHub Pages
-  const modelPath = `${import.meta.env.BASE_URL}models/mango3D.glb`
+  const modelPath = `${import.meta.env.BASE_URL}./models/mango3D.glb`
   const gltf = useLoader(GLTFLoader, modelPath)
   const meshRef = useRef()
   
