@@ -146,7 +146,7 @@ const Footer = () => {
             {/* Botón de volver arriba */}
             <button
               onClick={scrollToTop}
-              className="mt-4 bg-gradient-to-r from-[#FFA726] to-[#FFA726] hover:from-[#FFB74D] hover:to-[#FFB74D] text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center space-x-2"
+              className="mt-4 bg-gradient-to-r from-[#FFA726] to-[#FFA726] hover:from-[#FFB74D] hover:to-[#FFB74D] text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center space-x-2 cursor-pointer"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />

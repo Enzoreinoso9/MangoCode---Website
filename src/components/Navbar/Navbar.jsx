@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import logoB from '../../assets/LogoB.png'
 import logo from '../../assets/Logo.png'
+import { ImArrowUp } from 'react-icons/im'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -95,12 +96,12 @@ const Navbar = () => {
       </div>
 
       {isScrolled && (
-        <div className="fixed top-4 left-4 z-50">
+        <div className="fixed top-4 right-4 z-50">
           <button
             onClick={scrollToTop}
-            className="bg-green-500 hover:bg-[#FFA726] text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+            className="bg-green-500 hover:bg-[#FFA726] text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
           >
-            <img src={logoB} alt="MangoCode" className="h-9 w-9" />
+            <ImArrowUp />
           </button>
         </div>
       )}

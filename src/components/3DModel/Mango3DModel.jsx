@@ -71,8 +71,9 @@ function MangoModel({ mousePosition }) {
       meshRef.current.rotation.y = mousePosition.x * 0.3
       meshRef.current.rotation.x = mousePosition.y * 0.2
       
-      // Animación flotante
-      meshRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1
+      // Animación flotante (suma a la posición base en lugar de reemplazarla)
+      const baseY = 0.4
+      meshRef.current.position.y = baseY + Math.sin(state.clock.elapsedTime * 0.5) * 0.1
       
       // Rotación lenta constante
       meshRef.current.rotation.y += 0.005
@@ -83,7 +84,7 @@ function MangoModel({ mousePosition }) {
     <primitive 
       ref={meshRef}
       object={gltf.scene} 
-      scale={[4.5, 4.5, 4.5]}
+      scale={[6.5, 6.5, 6.5]}
       position={[0, 0, 0]}
     />
   )
